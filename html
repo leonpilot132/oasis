@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeoPizza - Customize Your Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customize Your Pizza</h1>
+
+        <div class="pizza-options">
+            <section class="option-group" id="base-options">
+                <h2>1. Choose Your Base</h2>
+                <div class="choices">
+                    <label><input type="radio" name="base" value="Thin Crust" data-price="100" checked> Thin Crust ($100)</label>
+                    <label><input type="radio" name="base" value="Hand Tossed" data-price="120"> Hand Tossed ($120)</label>
+                    <label><input type="radio" name="base" value="Deep Dish" data-price="150"> Deep Dish ($150)</label>
+                    <label><input type="radio" name="base" value="Gluten-Free" data-price="180"> Gluten-Free ($180)</label>
+                    <label><input type="radio" name="base" value="Cauliflower" data-price="200"> Cauliflower ($200)</label>
+                </div>
+            </section>
+
+            <section class="option-group" id="sauce-options">
+                <h2>2. Choose Your Sauce</h2>
+                <div class="choices">
+                    <label><input type="radio" name="sauce" value="Marinara" data-price="30" checked> Marinara ($30)</label>
+                    <label><input type="radio" name="sauce" value="Pesto" data-price="40"> Pesto ($40)</label>
+                    <label><input type="radio" name="sauce" value="BBQ" data-price="35"> BBQ ($35)</label>
+                    <label><input type="radio" name="sauce" value="White Garlic" data-price="45"> White Garlic ($45)</label>
+                    <label><input type="radio" name="sauce" value="Spicy Ranch" data-price="50"> Spicy Ranch ($50)</label>
+                </div>
+            </section>
+
+            <section class="option-group" id="cheese-options">
+                <h2>3. Choose Your Cheese</h2>
+                <div class="choices">
+                    <label><input type="radio" name="cheese" value="Mozzarella" data-price="60" checked> Mozzarella ($60)</label>
+                    <label><input type="radio" name="cheese" value="Cheddar" data-price="70"> Cheddar ($70)</label>
+                    <label><input type="radio" name="cheese" value="Provolone" data-price="65"> Provolone ($65)</label>
+                    <label><input type="radio" name="cheese" value="Feta" data-price="80"> Feta ($80)</label>
+                    <label><input type="radio" name="cheese" value="Vegan Cheese" data-price="90"> Vegan Cheese ($90)</label>
+                </div>
+            </section>
+
+            <section class="option-group" id="veggie-options">
+                <h2>4. Opt Your Veggies</h2>
+                <div class="choices">
+                    <label><input type="checkbox" name="veggie" value="Onion" data-price="20"> Onion ($20)</label>
+                    <label><input type="checkbox" name="veggie" value="Bell Pepper" data-price="25"> Bell Pepper ($25)</label>
+                    <label><input type="checkbox" name="veggie" value="Mushroom" data-price="30"> Mushroom ($30)</label>
+                    <label><input type="checkbox" name="veggie" value="Olives" data-price="35"> Olives ($35)</label>
+                    <label><input type="checkbox" name="veggie" value="Spinach" data-price="28"> Spinach ($28)</label>
+                    <label><input type="checkbox" name="veggie" value="Jalapenos" data-price="32"> Jalapenos ($32)</label>
+                    <label><input type="checkbox" name="veggie" value="Pineapple" data-price="40"> Pineapple ($40)</label>
+                </div>
+            </section>
+        </div>
+
+        <div class="summary-box">
+            <h2>Your Custom Pizza Summary</h2>
+            <p><strong>Base:</strong> <span id="summary-base"></span></p>
+            <p><strong>Sauce:</strong> <span id="summary-sauce"></span></p>
+            <p><strong>Cheese:</strong> <span id="summary-cheese"></span></p>
+            <p><strong>Veggies:</strong> <span id="summary-veggies"></span></p>
+            <h3>Total Price: <span id="total-price">$0</span></h3>
+        </div>
+
+        <div class="actions">
+            <button id="suggest-name-btn">Suggest Pizza Name</button>
+            <button id="generate-description-btn">Generate Pizza Description</button>
+            <button id="add-to-cart-btn">Add Custom Pizza to Cart & Proceed</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
